@@ -1,0 +1,128 @@
+.login-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: #FFFFFF;
+    bottom: 200px;
+    animation: login-form__open 1s linear 1 normal forwards;
+}
+
+@keyframes login-form__open {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.login-form form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline-color: black;
+}
+
+.login-form .isEmpty-text {
+    padding: 0 12px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #b61a02;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-box__text {
+    padding-left: 10px;
+    font-size: 13px
+}
+
+.btn-box__text span {
+    margin-left: 10px;
+    color: green;
+    cursor: pointer;
+}
+
+.btn-box button {
+    margin-left: auto;
+    padding: 12px 24px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 30px;
+    outline-color: black;
+}
+
+.btn-box button:hover {
+    background: #d07b30;
+    border: 1px solid transparent;
+    outline-color: #a8461a;
+    color: #FFFFFF;
+}
+
+.message-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-right: 1px solid #504f4f;
+    border-left: 1px solid #504f4f;
+    border-bottom: 1px solid #504f4f;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    top: -100px;
+    animation: error-open 0.3s linear 1 normal forwards;
+    z-index: 100;
+}
+
+@keyframes error-open {
+    from {
+        top: -100px
+    }
+    to {
+        top: 0
+    }
+}
+
+
+.message-card.closed {
+    display: none;
+}
+
+.message-card .btn-close {
+    margin-left: auto;
+    border: none;
+    background: transparent;
+    color: #AA1803;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.message-card__text {
+    text-align: center;
+}
+

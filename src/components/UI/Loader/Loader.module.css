@@ -1,0 +1,27 @@
+.loader {
+    width: 210px;
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roller {
+    width: 100px;
+    height: 100px;
+    border: 10px dotted #a8461a;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

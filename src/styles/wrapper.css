@@ -1,0 +1,11 @@
+@import url('Content/HomePage/home-page.css');
+@import url('Content/LoginPage/login-page.css');
+@import url('Content/MemoryPage/memory-page.css');
+@import url('Content/ItemPage/item-page.css');
+@import url('Content/ErrorPage/error-page.css');
+@import url('modals/index.css');
+
+.wrapper {
+    min-height: calc(100vh - 118px);
+    display: flex;
+}

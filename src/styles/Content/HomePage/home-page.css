@@ -1,0 +1,160 @@
+.home-page {
+    padding: 0 146px 146px 146px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url("../../../img/white-paper-texture.jpg");
+    background-size: cover;
+}
+
+.home-page__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #705342;
+    text-align: center;
+}
+
+.home-page .content__title {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.hello-text__top {
+    font-size: 40px;
+}
+
+.hello-text__bottom-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hello-text__bottom {
+    font-size: 30px;
+    position: absolute;
+}
+
+.hello-text__bottom.left {
+    right: 58%;
+}
+
+.hello-text__bottom.right {
+    left: 58%;
+}
+
+.hello-text__bottom-box img {
+    width: 200px;
+}
+
+.hello-text__logo {
+    width: 200px;
+}
+
+.home-page .instruction {
+    display: flex;
+    flex-direction: column;
+}
+
+.explanation-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+}
+
+.explanation-text__middle {
+    margin: 20px 0;
+    font-size: 20px;
+    color: #9A9A9A;
+    position: relative;
+}
+
+.explanation-text__middle::after,
+.explanation-text__middle::before {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 1px;
+    background: #705342;
+    position: absolute;
+    top:50%;
+}
+
+.explanation-text__middle::before {
+    left: 0;
+}
+
+.explanation-text__middle::after {
+    right: 0;
+}
+
+.steps-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps-box > div {
+    margin-top: 30px;
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps-box .step-text {
+    margin-bottom: 30px;
+    width: 100%;
+    font-size: 28px;
+    text-align: start;
+}
+
+.step-text .name{
+    font-weight: bold;
+}
+
+.step__img-box {
+    width: 100%;
+}
+
+.step__img-box.first {
+    position: relative;
+}
+
+.step__img-box > img{
+    width: 100%;
+    border: 2px solid #705342;
+    border-radius: 30px;
+}
+
+.cat-sharpening {
+    bottom: -15px;
+    right: -180px;
+    width: 200px;
+    position: absolute;
+}
+
+.congrats-box {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.congrats-box__text {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.congrats-box__img {
+    margin-top: 20px;
+    width: 200px;
+}
+

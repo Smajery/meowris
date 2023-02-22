@@ -1,0 +1,213 @@
+header {
+    padding: 0 146px;
+    min-height: 118px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.app-logo {
+    width: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.app-logo img {
+    width: 100px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.navbar {
+    width: calc(100% - 126px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+
+.left-nav .nav {
+    margin-right: 20px;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.right-nav .nav {
+    margin-left: 20px;
+}
+
+.navbar .nav {
+    width: 126px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar .nav.active,
+.navbar .nav:hover,
+.navbar .nav:focus{
+    border: 2px solid black;
+}
+
+.user-logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.user-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-logo .btn-edit-box input {
+    display: none;
+}
+
+.user-logo .btn-edit-box  label {
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: -10px;
+    animation: user-logo__edit 0.5s linear 1 normal forwards;
+    z-index: 10;
+}
+
+@keyframes user-logo__edit {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.user-logo button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #d07b30;
+    font-size: 20px;
+    position: absolute;
+    bottom: -30px;
+    animation: user-logo__edit 0.5s linear 1 normal forwards;
+}
+
+.user-logo button:hover {
+    color: green;
+}
+
+.btn-menu {
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+.header__border-bottom {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.yarn {
+    margin: 0;
+    width: 100%;
+    height: 3px;
+    background: #956F57;
+    color: #956F57;
+    border: none;
+}
+
+.cat-and-yarn-ball {
+    margin-right: -25px;
+    margin-left: auto;
+    display: flex;
+}
+
+.cat-and-yarn-ball .cat {
+    margin-bottom: -7px;
+    width: 85px;
+    height: 85px;
+    z-index: 2;
+}
+
+.cat-and-yarn-ball .yarn-ball {
+    margin-top: auto;
+    margin-bottom: -3px;
+    margin-left: 28px;
+    width: 27px;
+    height: 27px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1023px) {
+    header {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    header {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .menu-box {
+        padding: 20px 20px 0 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        padding-bottom: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar.closed {
+        display: none;
+    }
+
+    .btn-menu {
+        display: flex;
+    }
+}
+

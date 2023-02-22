@@ -1,0 +1,210 @@
+.item-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-page .item-card {
+    margin-top: 60px;
+    width: 584px;
+    display: flex;
+    flex-direction: column;
+    background: url("../../../img/white-paper-texture.jpg");
+    background-size: cover;
+    border: 2px solid #956F57;
+    border-radius: 15px;
+    position: relative;
+}
+
+.item-card__content-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-card__content-top  .content-top__img {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #956F57;
+    position: relative;
+}
+
+.item-card__content-top  .content-top__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.content-top__img > .btn-box {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.content-top__img .btn-edit {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.content-top__img .btn-edit:hover,
+.content-top__img .btn-edit:focus {
+    transform: translateX(-15px);
+}
+
+.content-top__img .btn-edit-box {
+    display: flex;
+}
+
+.content-top__img .btn-edit-box button{
+    margin-right: 10px;
+    padding: 7px 20px;
+    border-radius: 50px;
+    background: transparent;
+    border: 2px solid #504f4f;
+    color: #504f4f;;
+    font-size: 20px;
+    cursor: pointer;
+    animation: item__btn-delete 0.3s linear 1 normal forwards;
+}
+
+.content-top__img .btn-confirm:hover {
+    background: #d07b30;
+    border: 2px solid #d07b30;
+    color: #FFFFFF;
+}
+
+.content-top__img .btn-delete:hover {
+    background: #AA1803;
+    border: 2px solid #AA1803;
+    color: #FFFFFF;
+}
+
+@keyframes item__btn-delete {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+.item-card__content-top  .content-top__img input {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+
+.item-card__content-bottom {
+    padding: 10px 40px 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-card__content-bottom .content-bottom__text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.item-card__content-bottom .content-bottom__text textarea {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 40px;
+    text-align: center;
+}
+
+.item-card__content-bottom .description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description__title {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.item-card__content-bottom .description textarea {
+    padding: 5px 10px;
+    width: 100%;
+    height: 400px;
+    background: transparent;
+    border: 1px solid #705342;
+    border-radius: 5px;
+    outline-color: #705342;
+    font-size: 28px;
+}
+
+.item-card__content-bottom .content-bottom__rating {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.item-card__content-bottom .item-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-rating:not(:checked) > input {
+    display: none;
+}
+
+.item-rating:not(:checked) > label {
+    width: 70px;
+    height: 70px;
+    background-image: url("../../../img/star-rate.svg");
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.item-rating > input:checked ~ label {
+    filter: grayscale(0);
+}
+
+.item-rating:not(:checked) > label:hover,
+.item-rating:not(:checked) > label:hover ~ label {
+    filter: grayscale(0);
+}
+
+.item-rating > input:checked + label:hover,
+.item-rating > input:checked + label:hover ~ label,
+.item-rating > input:checked ~ label:hover,
+.item-rating > input:checked ~ label:hover ~ label,
+.item-rating > label:hover ~ input:checked ~ label {
+    filter: grayscale(0);
+}
+
+.item-card .left-sticker {
+    width: 220px;
+    height: 100px;
+    transform: rotateZ(-45deg);
+    position: absolute;
+    left: -75px;
+    top: -10px;
+}
+
+.item-card .right-sticker {
+    width: 220px;
+    height: 100px;
+    transform: rotateZ(-45deg);
+    position: absolute;
+    right: -75px;
+    bottom: -10px;
+}
+
