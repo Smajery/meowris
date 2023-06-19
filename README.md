@@ -6,6 +6,7 @@ This single-page app was created for users to save products they have tried, rat
 - CSS
 - JavaScript
 - React
+- Axios
 - Redux
 
 ### Back-end:  
