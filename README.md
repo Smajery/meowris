@@ -1,5 +1,5 @@
-# My second project.
-This single-page app was created for users to save products they have tried, rate them, and write descriptions, making it easier for them to keep track of these items. 
+# Meowris
+My second project. This is a single-page app was created for users to save products they have tried, rate them, and write descriptions, making it easier for them to keep track of these items. 
 
 ### Front-end:  
 - HTML
